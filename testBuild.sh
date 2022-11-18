@@ -3,6 +3,10 @@
 javac CurrencyConverter.java
 
 bugs=0 #amount of bugs (to increment)
+
+
+
+
 #CASE 1 a)
 IN1='dollars 1'
 
@@ -17,7 +21,8 @@ else
 	echo "Test failed"
 	bugs=$((bugs + 1))
 fi
-echo  "current bugs detected are" $bugs
+echo  "current bugs detected are" $bugs 
+
 
 
 
@@ -42,6 +47,8 @@ fi
 echo  "current bugs detected are" $bugs
 
 
+
+
 #CASE 2 b2)
 
 IN2='1 EUROS'
@@ -62,6 +69,9 @@ else
 fi
 echo  "current bugs detected are" $bugs
 
+
+
+
 #CASE 2 b3)
 
 IN2='1 Euros'
@@ -81,4 +91,25 @@ else
         bugs=$((bugs + 1))
 fi
 echo  "current bugs detected are" $bugs
+
+
+
+
+#CASE 3 Dollar)
+IN3='1 dollar'
+
+euroamount=
+poundamount=
+
+
+
+
+#CASE 3 Pound)
+IN3='1 pound'
+
+
+
+
+#CASE 3 Euro)
+IN3='1 euro'
 
