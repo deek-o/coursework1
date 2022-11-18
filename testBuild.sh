@@ -118,11 +118,43 @@ echo 'pound was' $poundamount
 #CASE 3 Pound)
 IN3='1 pounds'
 
+euroamount='1.19'
+dollaramount='1.36'
+
+AO3=$(java CurrencyConverter $IN3)
+
+if [[ "$AO3" == *"$euroamount"* && "$AO3" == *"$dollaramount"* ]]
+then
+        echo "Test passed"
+else
+        echo "Test failed"
+        bugs=$((bugs + 1))
+fi
+
+echo 'euro was' $euroamount
+echo 'pound was' $poundamount
+
 
 
 
 #CASE 3 Euro)
 IN3='1 euros'
+
+poundamount='0.84'
+dollaramount='1.13'
+
+AO3=$(java CurrencyConverter $IN3)
+
+if [[ "$AO3" == *"$poundamount"* && "$AO3" == *"$dollaramount"* ]]
+then
+        echo "Test passed"
+else
+        echo "Test failed"
+        bugs=$((bugs + 1))
+fi
+
+echo 'euro was' $euroamount
+echo 'pound was' $poundamount
 
 #1.0 Dollars = 0.74 Pounds 1.0 Dollars = 0.88 Euros Thank you for using the converter. My name is Declan!
 
