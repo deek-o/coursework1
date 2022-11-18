@@ -114,6 +114,8 @@ fi
 echo 'euro was' $euroamount
 echo 'pound was' $poundamount
 
+echo  "current bugs detected are" $bugs
+
 
 #CASE 3 Pound)
 IN3='1 pounds'
@@ -134,6 +136,7 @@ fi
 echo 'euro was' $euroamount
 echo 'pound was' $poundamount
 
+echo  "current bugs detected are" $bugs
 
 
 
@@ -155,6 +158,8 @@ fi
 
 echo 'euro was' $euroamount
 echo 'pound was' $poundamount
+
+echo  "current bugs detected are" $bugs
 
 #1.0 Dollars = 0.74 Pounds 1.0 Dollars = 0.88 Euros Thank you for using the converter. My name is Declan!
 
