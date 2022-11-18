@@ -25,7 +25,7 @@ echo  "current bugs detected are" $bugs
 
 IN2='1 euros'
 
-EO2="AO2 is 1.0 Euros = 1.31 Dollars 1.0 Euros = 0.84 Pounds Thank you for using the converter. My name is Declan!"
+EO2="1.0 Euros = 1.31 Dollars 1.0 Euros = 0.84 Pounds Thank you for using the converter. My name is Declan!"
 
 AO2=$(java CurrencyConverter $IN2)
 
