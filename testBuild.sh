@@ -1,3 +1,3 @@
 #! /bin/bash
 
-$ echo "my name is john"
+echo "Hello World!"
