@@ -16,7 +16,7 @@ then
 	echo "Test passed"
 else
 	echo "Test failed"
-	((bugs++))
+	((bugs+=1))
 fi
 echo  "current bugs detected are" $bugs
 
