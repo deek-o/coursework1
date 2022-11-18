@@ -30,6 +30,7 @@ EO2="1.0 Euros = 1.31 Dollars 1.0 Euros = 0.84 Pounds Thank you for using the co
 AO2=$(java CurrencyConverter $IN2)
 
 echo "AO2 is" $AO2
+echo "EO2 is" $EO2
 
 if [[ $AO2 == $EO2 ]]
 then
