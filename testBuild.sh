@@ -18,8 +18,6 @@ else
 	#bugs=$((bugs + 1))
 	exit 0
 fi
-echo  "current bugs detected are" $bugs 
-
 
 
 
