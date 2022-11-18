@@ -96,7 +96,7 @@ echo  "current bugs detected are" $bugs
 
 
 #CASE 3 Dollar)
-IN3='1 dollar'
+IN3='1 dollars'
 
 java CurrencyConverter $IN3
 
@@ -107,11 +107,11 @@ poundamount=
 
 
 #CASE 3 Pound)
-IN3='1 pound'
+IN3='1 pounds'
 
 
 
 
 #CASE 3 Euro)
-IN3='1 euro'
+IN3='1 euros'
 
