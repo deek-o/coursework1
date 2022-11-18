@@ -33,7 +33,7 @@ if [[ $AO2 == $EO2 ]]
 then
         echo "Test case passed"
 else
-        echo "Test failed"
+        echo "Test failed - lower case input not accepted"
         bugs=$((bugs + 1))
 	exit 0
 fi
@@ -53,7 +53,7 @@ if [[ $AO2 == $EO2 ]]
 then
         echo "Test case passed"
 else
-        echo "Test failed"
+        echo "Test failed - all upper case input not accepted"
         bugs=$((bugs + 1))
 	exit 0
 
@@ -74,7 +74,7 @@ if [[ $AO2 == $EO2 ]]
 then
         echo "Test case passed"
 else
-        echo "Test failed"
+        echo "Test failed - capitalisation not accepted"
         bugs=$((bugs + 1))
 	exit 0
 
