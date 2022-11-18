@@ -21,24 +21,3 @@ fi
 echo  "current bugs detected are" $bugs
 
 
-
-#CASE 2 b1)
-
-IN2='1 euros'
-
-EO2="1.0 Euros = 1.31 Dollars 1.0 Euros = 0.84 Pounds Thank you for using the converter."
-
-AO2=$(java CurrencyConverter $IN2)
-
-echo "AO2 is" $AO2
-
-if [[ $AO2 == $EO2 ]]
-then
-	echo "Test passed"
-else
-        echo "Test failed"
-        ((bugs++))
-fi
-echo  "current bugs detected are" $bugs
-
-
