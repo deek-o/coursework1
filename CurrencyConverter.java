@@ -47,7 +47,7 @@ public class CurrencyConverter {
                                 System.out.println(amount + " Euros = " + f.format(pound) + " Pounds");//NOSONAR
                                 break;
                 }
-                System.out.println("Thank you for using the converter.");//NOSONAR
+                System.out.println("Thank you for using the converter.My name is Declan !");//NOSONAR
         }
 
 }
