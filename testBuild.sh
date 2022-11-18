@@ -44,7 +44,7 @@ fi
 
 IN2='1 EUROS'
 
-EO2="1.0 Euros = 1.31 Dollars"
+EO2="1.0 Euros = 1.13 Dollars"
 AO2=$(java CurrencyConverter $IN2)
 AO2=${AO2:0:24}
 
@@ -65,7 +65,7 @@ fi
 
 IN2='1 Euros'
 
-EO2="1.0 Euros = 1.31 Dollars"
+EO2="1.0 Euros = 1.13 Dollars"
 AO2=$(java CurrencyConverter $IN2)
 AO2=${AO2:0:24}
 
