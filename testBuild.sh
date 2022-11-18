@@ -6,11 +6,11 @@ javac CurrencyConverter.java
 #CASE 1 a)
 IN1='dollars 1'
 
-EO1="Invalid input"
+EO1="Invalid input..."
 
 AO1=$(java CurrencyConverter $IN1)
 
-if [[ "$AO1" == *"$EO1"*  ]]
+if [[ "$AO1" == "$EO1"  ]]
 then
 	echo "Test case passed"
 else
