@@ -9,7 +9,7 @@ public class CurrencyConverter {
 
                 DecimalFormat f = new DecimalFormat("##.##");
 	 
-		if(args[0].length() != 1) {
+		if(args[0].length() < 1 || args[0].contentEquals("dollars") || args[0].contentEquals("pounds")|| args[0].contentEquals("euros")) {
                 	System.out.println("invalid input entered. Ending program...");
                 	System.exit(0);
                 }
