@@ -14,7 +14,7 @@ public class CurrencyConverter {
                 } catch (NumberFormatException nfe) {
                    System.out.println("invalid input...");
                    
-                   //System.exit(0);
+                   System.exit(0);
                 }
 	
 
