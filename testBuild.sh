@@ -90,7 +90,6 @@ poundamount='0.74'
 
 AO3=$(java CurrencyConverter $IN3)
 
-echo 'dollar one comes with' $AO3
 
 if [[ "$AO3" == *"$euroamount"* && "$AO3" == *"$poundamount"* ]]
 then
@@ -110,7 +109,6 @@ euroamount='1.19'
 dollaramount='1.36'
 
 AO3=$(java CurrencyConverter $IN3)
-echo 'pound one comes with' $AO3
 if [[ "$AO3" == *"$euroamount"* && "$AO3" == *"$dollaramount"* ]]
 then
         echo "Test passed"
@@ -131,7 +129,6 @@ poundamount='0.84'
 dollaramount='1.13'
 
 AO3=$(java CurrencyConverter $IN3)
-echo 'euro one comes out with' $AO3
 if [[ "$AO3" == *"$poundamount"* && "$AO3" == *"$dollaramount"* ]]
 then
         echo "Test passed"
