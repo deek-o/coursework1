@@ -4,7 +4,7 @@ javac CurrencyConverter.java
 
 bugs=0 #amount of bugs (to increment)
 #CASE 1 a)
-IN1='1 dollars'
+IN1='dollars 1'
 
 EO1="Invalid input. Ending program..."
 
@@ -25,9 +25,9 @@ echo  "current bugs detected are" $bugs
 
 IN2='1 euros'
 
-EO2="1.0 Euros = 1.31 Dollars 1.0 Euros = 0.84 Pounds Thank you for using the converter. My name is Declan!"
-
-AO2=$(java CurrencyConverter $IN2) | head -c8
+EO2="1.0 Euros = 1.31 Dollars"
+AO2=$(java CurrencyConverter $IN2)
+${AO2:0:23}
 
 echo "AO2 is" $AO2
 echo "EO2 is" $EO2
