@@ -17,4 +17,7 @@ else
 	echo "test failed"
 	((bugs++))
 fi
-echo  "current bugs detected are "  $bugs
+echo  "current bugs detected are" $bugs
+
+
+#
