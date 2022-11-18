@@ -2,7 +2,7 @@
 
 javac CurrencyConverter.java
 
-IN1="1 dollars"
+IN1=1 dollars
 
 EO1="Please enter a valid input"
 
