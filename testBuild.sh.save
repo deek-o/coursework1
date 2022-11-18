@@ -1,0 +1,5 @@
+#! /bin/bash
+
+IN1='dollars 1'
+
+EO1='Please restart and enter a valid input'
