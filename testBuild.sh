@@ -1,4 +1,3 @@
-
 #! /bin/bash
 
 javac CurrencyConverter.java
@@ -16,7 +15,7 @@ then
 	echo "Test passed"
 else
 	echo "Test failed"
-	((bugs+=1))
+	(($bugs++))
 fi
 echo  "current bugs detected are" $bugs
 
