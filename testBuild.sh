@@ -29,18 +29,14 @@ EO2="1.0 Euros = 1.31 Dollars"
 AO2=$(java CurrencyConverter $IN2)
 AO2=${AO2:0:24}
 
-echo "AO2 is" $AO2
-echo "EO2 is" $EO2
-
 if [[ $AO2 == $EO2 ]]
 then
-        echo "Test passed"
+        echo "Test case passed"
 else
         echo "Test failed"
         bugs=$((bugs + 1))
+	exit 0
 fi
-echo  "current bugs detected are" $bugs
-
 
 
 
@@ -52,18 +48,16 @@ EO2="1.0 Euros = 1.31 Dollars"
 AO2=$(java CurrencyConverter $IN2)
 AO2=${AO2:0:24}
 
-echo "AO2 is" $AO2
-echo "EO2 is" $EO2
 
 if [[ $AO2 == $EO2 ]]
 then
-        echo "Test passed"
+        echo "Test case passed"
 else
         echo "Test failed"
         bugs=$((bugs + 1))
-fi
-echo  "current bugs detected are" $bugs
+	exit 0
 
+fi
 
 
 
@@ -75,18 +69,16 @@ EO2="1.0 Euros = 1.31 Dollars"
 AO2=$(java CurrencyConverter $IN2)
 AO2=${AO2:0:24}
 
-echo "AO2 is" $AO2
-echo "EO2 is" $EO2
 
 if [[ $AO2 == $EO2 ]]
 then
-        echo "Test passed"
+        echo "Test case passed"
 else
         echo "Test failed"
         bugs=$((bugs + 1))
-fi
-echo  "current bugs detected are" $bugs
+	exit 0
 
+fi
 
 
 
