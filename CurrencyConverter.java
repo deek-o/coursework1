@@ -8,6 +8,12 @@ public class CurrencyConverter {
                 double amount, dollar, pound, code, euro;
 
                 DecimalFormat f = new DecimalFormat("##.##");
+	 
+		if(args[0].isEmpty() || args.length > 0){
+		System.out.println("Invalid input. Ending program...");
+		System.exit(0);
+		}
+	
 
                 amount = Integer.parseInt(args[0]);
                 String currency = args[1];
