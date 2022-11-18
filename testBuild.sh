@@ -96,12 +96,9 @@ then
 else
         echo "Test failed"
         bugs=$((bugs + 1))
+	exit 0
+
 fi
-
-echo 'euro was' $euroamount
-echo 'pound was' $poundamount
-
-echo  "current bugs detected are" $bugs
 
 
 #CASE 3 Pound)
@@ -118,12 +115,10 @@ then
 else
         echo "Test failed"
         bugs=$((bugs + 1))
+	exit 0
+
 fi
 
-echo 'euro was' $euroamount
-echo 'pound was' $poundamount
-
-echo  "current bugs detected are" $bugs
 
 
 
@@ -141,11 +136,8 @@ then
 else
         echo "Test failed"
         bugs=$((bugs + 1))
+	exit 0
+
 fi
-
-echo 'euro was' $euroamount
-echo 'pound was' $poundamount
-
-echo  "current bugs detected are" $bugs
 
 
