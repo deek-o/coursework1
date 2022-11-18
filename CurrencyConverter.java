@@ -12,7 +12,7 @@ public class CurrencyConverter {
 		try {
                 	amount = Integer.parseInt(args[0]);
                 } catch (NumberFormatException nfe) {
-                   System.out.println("invalid input...");
+                   System.out.println("Invalid input...");
                    
                    System.exit(0);
                 }
