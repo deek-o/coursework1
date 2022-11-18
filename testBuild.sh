@@ -2,10 +2,6 @@
 
 javac CurrencyConverter.java
 
-bugs=0 #amount of bugs (to increment)
-
-
-
 
 #CASE 1 a)
 IN1='dollars 1'
@@ -16,10 +12,11 @@ AO1=$(java CurrencyConverter $IN1)
 
 if [[ $AO1 == $EO1 ]]
 then
-	echo "Test passed"
+	echo "Test case passed"
 else
 	echo "Test failed"
-	bugs=$((bugs + 1))
+	#bugs=$((bugs + 1))
+	exit 0
 fi
 echo  "current bugs detected are" $bugs 
 
@@ -161,5 +158,4 @@ echo 'pound was' $poundamount
 
 echo  "current bugs detected are" $bugs
 
-#1.0 Dollars = 0.74 Pounds 1.0 Dollars = 0.88 Euros Thank you for using the converter. My name is Declan!
 
