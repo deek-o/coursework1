@@ -98,12 +98,20 @@ echo  "current bugs detected are" $bugs
 #CASE 3 Dollar)
 IN3='1 dollars'
 
-java CurrencyConverter $IN3
+AO3=$(java CurrencyConverter $IN3)
+euroamount=AO2=${AO3:40:44}
+poundamount=AO2=${AO3:14:17}
 
-euroamount=
-poundamount=
+if [[ $euroamount == 0.88 && $poundamount == 0.74 ]]
+then
+        echo "Test passed"
+else
+        echo "Test failed"
+        bugs=$((bugs + 1))
+fi
 
-
+echo 'euro was' $euroamount
+echo 'pound was' $poundamount
 
 
 #CASE 3 Pound)
@@ -114,4 +122,6 @@ IN3='1 pounds'
 
 #CASE 3 Euro)
 IN3='1 euros'
+
+1.0 Dollars = 0.74 Pounds 1.0 Dollars = 0.88 Euros Thank you for using the converter. My name is Declan!
 
