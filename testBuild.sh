@@ -9,8 +9,8 @@ IN1='dollars 1'
 EO1="Invalid input. Ending program..."
 
 AO1=$(java CurrencyConverter $IN1)
-echo "AO1 is" $AO1
-if [[ $AO1 == $EO1 ]]
+
+if [[ "$AO1" == *"$EO1"*  ]]
 then
 	echo "Test case passed"
 else
