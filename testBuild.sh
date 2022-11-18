@@ -2,7 +2,9 @@
 
 javac CurrencyConverter.java
 
-IN1='1 dollars'
+bugs=0 #amount of bugs (to increment)
+#CASE 1 a)
+IN1='dollars 1'
 
 EO1="Please enter a valid input"
 
