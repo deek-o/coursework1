@@ -27,7 +27,7 @@ IN2='1 euros'
 
 EO2="1.0 Euros = 1.31 Dollars"
 AO2=$(java CurrencyConverter $IN2)
-AO2=${AO2:0:23}
+AO2=${AO2:0:24}
 
 echo "AO2 is" $AO2
 echo "EO2 is" $EO2
