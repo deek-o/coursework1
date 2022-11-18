@@ -27,7 +27,7 @@ IN2='1 euros'
 
 EO2="1.0 Euros = 1.31 Dollars 1.0 Euros = 0.84 Pounds Thank you for using the converter. My name is Declan!"
 
-AO2=$(java CurrencyConverter $IN2)
+AO2=$(java CurrencyConverter $IN2) | head -c8
 
 echo "AO2 is" $AO2
 echo "EO2 is" $EO2
