@@ -8,6 +8,6 @@ javac CurrencyConverter.java
 
 #AO1= 
 
-java CurrencyConverter 1 dollars
+java CurrencyConverter '1 dollars'
 
 echo "pass"
