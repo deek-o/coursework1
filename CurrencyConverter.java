@@ -9,10 +9,10 @@ public class CurrencyConverter {
 
                 DecimalFormat f = new DecimalFormat("##.##");
 	 
-		if(args[0].isEmpty() || args.length < 2){
-		System.out.println("Invalid input. Ending program...");
-		System.exit(0);
-		}
+		if(args[0].length() != 1) {
+                	System.out.println("invalid input entered. Ending program...");
+                	System.exit(0);
+                }
 	
 
                 amount = Integer.parseInt(args[0]);
