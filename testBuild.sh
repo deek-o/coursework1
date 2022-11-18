@@ -6,7 +6,7 @@ javac CurrencyConverter.java
 #CASE 1 a)
 IN1='dollars 1'
 
-EO1="Invalid input. Ending program..."
+EO1="Invalid input"
 
 AO1=$(java CurrencyConverter $IN1)
 
