@@ -10,11 +10,11 @@ EO1="Invalid input. Ending program..."
 
 AO1=$(java CurrencyConverter $IN1)
 
-if $AO1==$EO1
+if [[ $AO1 == $EO1 ]]
 then
 	echo "test passed"
 else
 	echo "test failed"
 	((bugs++))
 fi
-echo  "current bugs detected are "  + $bugs
+echo  "current bugs detected are "  $bugs
