@@ -98,11 +98,12 @@ echo  "current bugs detected are" $bugs
 #CASE 3 Dollar)
 IN3='1 dollars'
 
-AO3=$(java CurrencyConverter $IN3)
-euroamount=${AO3:40:44}
-poundamount=${AO3:14:17}
+euroamount='0.88'
+poundamount='0.74'
 
-if [[ $euroamount == 0.88 && $poundamount == 0.74 ]]
+AO3=$(java CurrencyConverter $IN3)
+
+if [[ "$AO3" == *"$euroamount"* && "$AO3" == *"$poundamount"* ]]
 then
         echo "Test passed"
 else
