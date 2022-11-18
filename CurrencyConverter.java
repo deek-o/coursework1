@@ -21,7 +21,7 @@ public class CurrencyConverter {
                 amount = Integer.parseInt(args[0]);
                 String currency = args[1];
 
-		currency.toLowerCase();
+		currency=currency.toLowerCase();
 
                 // For amounts Conversion
                 switch (currency){
