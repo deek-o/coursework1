@@ -15,5 +15,6 @@ then
 	echo "test passed"
 else
 	echo "test failed"
+	((bugs++))
 fi
-echo $AO1
+echo  "current bugs detected are "  + $bugs
